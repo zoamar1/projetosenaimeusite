@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <ul class="header-list">
+            <li class="header-list-item"><a href="#profile">Perfil</a></li>
+            <li class="header-list-item"><a href="#tech">Tecnologias</a></li>
+            <li class="header-list-item"><a href="#contact">Contato</a></li>
+        </ul>
+    </header>
+    
+    <section id="profile" class="profile">
+        <div class="profile-image">
+            <img class="profile-img" src="https://upload.wikimedia.org/wikipedia/pt/b/bd/Floral_Shoppe.jpg"
+                width="400px" height="400px" alt="Matheus's picture">
+        </div>
+        <div class="profile-content">
+            <h1 class="profile-content-title">Matheus Pasqualotto</h1>
+            <p class="profile-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sit ex
+                repudiandae aliquam quo animi fugiat, libero, dicta quia vel quaerat eius praesentium blanditiis
+                consequatur magnam reiciendis in cum? Ducimus!</p>
+        </div>
+    </section>
+
+    <section id="tech" class="technologies">
+        <div>
+            <h2 class="tech-title">Tecnologias</h2>
+        </div>
+        <div class="tech-explanation">
+            <div class="tech-explanation-items">
+
+                <h3>CSS</h3>
+                <img height="100px" width="100px" src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="">
+
+                <p class="tech-explanation-items-text">HTML é a linguagem padrão para criação e estruturação de páginas
+                    da web. Ele fornece uma estrutura básica para o conteúdo de uma página, como texto, imagens, vídeos
+                    e links. HTML usa uma série de elementos para definir diferentes partes do conteúdo e sua estrutura.
+                    Por exemplo, a tag para parágrafos é usada para definir parágrafos, a tag para imagens é usada para
+                    inserir imagens e a tag para links é usada para criar links. HTML é estático por natureza, o que
+                    significa que não é usado para criar interações dinâmicas na página.</p>
+            </div>
+            <div class="tech-explanation-items">
+
+                <h3>HTML</h3>
+                <img height="100px" width="100px" src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="">
+
+
+                <p class="tech-explanation-items-text">CSS é uma linguagem usada para estilizar a aparência visual de
+                    uma página da web criada em HTML. Ele permite definir propriedades como cores, fontes, espaçamentos,
+                    tamanhos e posicionamento de elementos HTML. Com o CSS, você pode criar layouts atraentes e garantir
+                    uma experiência visual consistente em diferentes dispositivos e navegadores. As regras CSS são
+                    aplicadas aos elementos HTML usando seletores. Por exemplo, você pode definir que todos os
+                    parágrafos tenham uma cor de texto específica ou que todas as imagens tenham uma margem de 20
+                    pixels.</p>
+            </div>
+            <div class="tech-explanation-items">
+
+                <h3>JavaScript</h3>
+                <img height="100px" width="100px" src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="">
+
+                <p class="tech-explanation-items-text">JavaScript é uma linguagem de programação usada para tornar as
+                    páginas da web interativas e dinâmicas. Ela permite adicionar comportamentos específicos às páginas,
+                    como validar formulários, criar efeitos de animação, manipular o conteúdo da página em tempo real e
+                    interagir com o usuário. Com o JavaScript, é possível criar aplicativos da web complexos e
+                    responsivos, tornando a experiência do usuário mais envolvente e interativa. JavaScript é uma parte
+                    essencial do desenvolvimento web moderno, sendo suportado por todos os navegadores principais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contato</h2>
+        <div class="contact-div">
+            <div class="contact-form">
+                <h3 class="contact-form-title">Me mande uma mensagem</h3>
+                <input class="contact-form-input" type="text" id="nome" placeholder="Digite seu nome">
+                <textarea class="contact-form-textarea" type="text" id="mensagem"
+                    placeholder="Digite sua mensagem"></textarea>
+                <button onclick="conferirMesagemWhatsApp()">Conferir dados inseridos</button>
+            </div>
+
+            <div class="contact-whatsapp">
+                <div class="contact-whatsapp-confirm">
+                    <p class="contact-whatsapp-confirm-items">
+                        Nome: <span id="confNome"></span>
+                    </p>
+                    
+                    <p class="contact-whatsapp-confirm-items">
+                        Mensagem: <span id="confMsg"></span>
+                    </p>
+                    
+                </div>
+                <button class="contact-whatsapp-button" onclick="enviar()"><img
+                        src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="Icone do Whatsapp"
+                        width="50px" height="50px">
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
