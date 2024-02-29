@@ -28,13 +28,11 @@ html{
 .header-list a{
     text-decoration: none;
     color:#FFFFFF;
-    
 }
 
 .header-list a:hover{
     text-decoration: underline;
     text-decoration-color: #FFFFFF;
-  
 }
 
 
@@ -51,11 +49,14 @@ html{
 
 .profile-image {
     margin-left: 15vw;
-
+    width:350px; 
+    height:350px;
+    text-align: center;
 }
 
 .profile-img {
     border-radius: 100%;
+    
 }
 
 .profile-content {
@@ -80,7 +81,7 @@ html{
     align-items: center;
     gap:3vh;
     padding: 45px 0 45px 0;
-    background-color: #ED6B86;
+    background-color: #e08a9b;
 }
 
 .tech-title{
@@ -108,13 +109,13 @@ html{
     margin: 0 15px;
     text-align: center; 
     max-width: 300px;
-   
-    padding: 20px 40px; 
+    padding: 20px 40px;
+    transition: all 0.5s ease-out;
 }
 
 .tech-explanation-items:hover {
-    
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3), 0px 6px 20px rgba(0, 0, 0, 0.2), 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-out;
 }
 
 .tech-explanation-items-text{
